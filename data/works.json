@@ -1,0 +1,74 @@
+{
+  "works": [
+    {
+      "image": "/images/img_01.jpeg",
+      "title": "EXPLOSION",
+      "meta": "Acryl, Relief · ca. 120 × 150 cm · 2024",
+      "price": "Auf Anfrage",
+      "badge": ""
+    },
+    {
+      "image": "/images/img_02.jpeg",
+      "title": "STRUKTUR I",
+      "meta": "Detailaufnahme · Acryl, Spachtelmasse",
+      "price": "—",
+      "badge": ""
+    },
+    {
+      "image": "/images/img_03.jpeg",
+      "title": "KONTRAST — DETAIL",
+      "meta": "Acryl auf Leinwand",
+      "price": "—",
+      "badge": ""
+    },
+    {
+      "image": "/images/img_04.jpeg",
+      "title": "KONTRAST",
+      "meta": "Acryl auf Leinwand · ca. 160 × 120 cm · 2023",
+      "price": "2.800 €",
+      "badge": ""
+    },
+    {
+      "image": "/images/img_05.jpeg",
+      "title": "GLUT — DETAIL",
+      "meta": "Acryl, Relief",
+      "price": "—",
+      "badge": ""
+    },
+    {
+      "image": "/images/img_06.jpeg",
+      "title": "VULKAN",
+      "meta": "Acryl, Relief · ca. 80 × 200 cm · 2024",
+      "price": "3.200 €",
+      "badge": ""
+    },
+    {
+      "image": "/images/img_07.jpeg",
+      "title": "MAGMA — DETAIL",
+      "meta": "Acryl, Relief",
+      "price": "—",
+      "badge": ""
+    },
+    {
+      "image": "/images/img_08.jpeg",
+      "title": "SÄULE",
+      "meta": "Acryl, Relief · ca. 120 × 160 cm · 2024",
+      "price": "3.600 €",
+      "badge": ""
+    },
+    {
+      "image": "/images/img_09.jpeg",
+      "title": "GOLD — TRIPTYCHON",
+      "meta": "Acryl, Blattgold, Relief · 3-teilig · 2023",
+      "price": "4.500 €",
+      "badge": ""
+    },
+    {
+      "image": "/images/img_10.jpeg",
+      "title": "NACHT & GOLD",
+      "meta": "Zwei Werke · Acryl, Relief · 2023",
+      "price": "Auf Anfrage",
+      "badge": ""
+    }
+  ]
+}

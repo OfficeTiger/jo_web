@@ -1,0 +1,44 @@
+backend:
+  name: git-gateway
+  branch: main
+
+locale: de
+
+media_folder: "images"
+public_folder: "/images"
+
+collections:
+  - name: "galerie"
+    label: "Galerie — Werke"
+    files:
+      - label: "Alle Werke"
+        name: "works"
+        file: "data/works.json"
+        format: json
+        fields:
+          - label: "Werke"
+            name: "works"
+            widget: "list"
+            summary: "{{fields.title}} — {{fields.price}}"
+            fields:
+              - label: "Titel"
+                name: "title"
+                widget: "string"
+                hint: "Titel des Werks, z. B. EXPLOSION"
+              - label: "Beschreibung"
+                name: "meta"
+                widget: "string"
+                hint: "Technik, Maße, Jahr — z. B. Acryl, Relief · 120 × 150 cm · 2024"
+              - label: "Preis"
+                name: "price"
+                widget: "string"
+                hint: "z. B. 2.800 € oder «Auf Anfrage» oder «—» (nicht zum Verkauf)"
+              - label: "Bild"
+                name: "image"
+                widget: "image"
+                hint: "Bild hochladen oder aus vorhandenen auswählen"
+              - label: "Etikett"
+                name: "badge"
+                widget: "string"
+                required: false
+                hint: "Optional: z. B. NEU oder VERKAUFT — leer lassen wenn nicht benötigt"
