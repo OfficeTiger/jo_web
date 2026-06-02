@@ -8,6 +8,38 @@ media_folder: "images"
 public_folder: "/images"
 
 collections:
+  - name: "site"
+    label: "Texte & Kontakt"
+    files:
+      - label: "Über mich & Kontakt"
+        name: "site"
+        file: "data/site.json"
+        format: json
+        fields:
+          - label: "Über mich"
+            name: "about"
+            widget: "object"
+            fields:
+              - {label: "Zitat — Zeile 1", name: "quote_line1", widget: "string", hint: "z. B. FARBE IST"}
+              - {label: "Zitat — Hervorhebung (rot)", name: "quote_highlight", widget: "string", hint: "z. B. MATERIE."}
+              - {label: "Zitat — Zeile 3", name: "quote_line3", widget: "string", hint: "z. B. NICHT DEKORATION."}
+              - {label: "Text 1", name: "text1", widget: "text"}
+              - {label: "Text 2", name: "text2", widget: "text"}
+              - {label: "Statistik 1 — Zahl", name: "stat1_number", widget: "string", hint: "z. B. 12+"}
+              - {label: "Statistik 1 — Bezeichnung", name: "stat1_label", widget: "string", hint: "z. B. Jahre Erfahrung"}
+              - {label: "Statistik 2 — Zahl", name: "stat2_number", widget: "string"}
+              - {label: "Statistik 2 — Bezeichnung", name: "stat2_label", widget: "string"}
+              - {label: "Statistik 3 — Zahl", name: "stat3_number", widget: "string"}
+              - {label: "Statistik 3 — Bezeichnung", name: "stat3_label", widget: "string"}
+          - label: "Kontakt"
+            name: "contact"
+            widget: "object"
+            fields:
+              - {label: "E-Mail-Adresse", name: "email", widget: "string", hint: "z. B. kontakt@josephroysky.de"}
+              - {label: "Atelier", name: "atelier", widget: "text", hint: "Zwei Zeilen — mit Enter trennen"}
+              - {label: "Besuche", name: "besuche", widget: "text", hint: "Zwei Zeilen — mit Enter trennen"}
+              - {label: "Antwortzeit", name: "antwort", widget: "text", hint: "Zwei Zeilen — mit Enter trennen"}
+
   - name: "galerie"
     label: "Galerie — Werke"
     files:

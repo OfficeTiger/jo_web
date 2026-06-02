@@ -684,25 +684,25 @@ footer {
     </div>
     <div class="about-right reveal">
       <p class="section-label">Über den Künstler</p>
-      <h2 class="about-quote">FARBE IST<br><span class="hl">MATERIE.</span><br>NICHT DEKORATION.</h2>
-      <p class="about-text">
+      <h2 id="about-quote" class="about-quote">FARBE IST<br><span class="hl">MATERIE.</span><br>NICHT DEKORATION.</h2>
+      <p id="about-text1" class="about-text">
         Ich male mit dem Spachtel, mit den Händen, mit dem Körper. Meine Werke entstehen in Schichten — jede Oberfläche trägt die Geschichte ihrer Entstehung sichtbar in sich: aufgetragen, abgekratzt, überarbeitet, verdichtet.
       </p>
-      <p class="about-text">
+      <p id="about-text2" class="about-text">
         Die wiederkehrenden Kontraste in meiner Arbeit — Schwarz gegen Weiß, Rot gegen Schwarz, Gold gegen Dunkel — sind keine ästhetische Entscheidung. Sie sind Ausdruck: von Spannung, von Energie, von dem, was zwischen zwei Zuständen liegt.
       </p>
-      <div class="about-stats">
+      <div id="about-stats" class="about-stats">
         <div>
           <div class="stat-n">12+</div>
-          <div class="stat-l">Jahre<br>Erfahrung</div>
+          <div class="stat-l">Jahre Erfahrung</div>
         </div>
         <div>
           <div class="stat-n">200+</div>
-          <div class="stat-l">Verkaufte<br>Werke</div>
+          <div class="stat-l">Verkaufte Werke</div>
         </div>
         <div>
           <div class="stat-n">8</div>
-          <div class="stat-l">Aus-<br>stellungen</div>
+          <div class="stat-l">Ausstellungen</div>
         </div>
       </div>
     </div>
@@ -750,19 +750,19 @@ footer {
     <div class="c-left reveal">
       <p class="section-label">Kontakt & Anfragen</p>
       <h2 class="section-title">SCHREIBEN<br>SIE MIR.</h2>
-      <a href="mailto:kontakt@josephroysky.de" class="c-big-email">kontakt@josephroysky.de</a>
+      <a id="contact-email" href="mailto:kontakt@josephroysky.de" class="c-big-email">kontakt@josephroysky.de</a>
       <div class="c-info-row">
         <div class="c-info-item">
           <div class="c-info-label">Atelier</div>
-          <div class="c-info-val">Auf Anfrage<br>München</div>
+          <div id="contact-atelier" class="c-info-val">Auf Anfrage<br>München</div>
         </div>
         <div class="c-info-item">
           <div class="c-info-label">Besuche</div>
-          <div class="c-info-val">Nach Vereinbarung<br>Di – Sa</div>
+          <div id="contact-besuche" class="c-info-val">Nach Vereinbarung<br>Di – Sa</div>
         </div>
         <div class="c-info-item">
           <div class="c-info-label">Antwort</div>
-          <div class="c-info-val">In der Regel<br>innerhalb 24 h</div>
+          <div id="contact-antwort" class="c-info-val">In der Regel<br>innerhalb 24 h</div>
         </div>
       </div>
     </div>
@@ -869,7 +869,37 @@ footer {
     });
   }
 
+  // About & Kontakt aus site.json laden
+  async function loadSite() {
+    try {
+      const res = await fetch('/data/site.json');
+      const d = await res.json();
+      const a = d.about;
+      const c = d.contact;
+
+      document.getElementById('about-quote').innerHTML =
+        `${esc(a.quote_line1)}<br><span class="hl">${esc(a.quote_highlight)}</span><br>${esc(a.quote_line3)}`;
+      document.getElementById('about-text1').textContent = a.text1;
+      document.getElementById('about-text2').textContent = a.text2;
+      document.getElementById('about-stats').innerHTML = `
+        <div><div class="stat-n">${esc(a.stat1_number)}</div><div class="stat-l">${esc(a.stat1_label)}</div></div>
+        <div><div class="stat-n">${esc(a.stat2_number)}</div><div class="stat-l">${esc(a.stat2_label)}</div></div>
+        <div><div class="stat-n">${esc(a.stat3_number)}</div><div class="stat-l">${esc(a.stat3_label)}</div></div>
+      `;
+
+      const emailEl = document.getElementById('contact-email');
+      emailEl.href = `mailto:${esc(c.email)}`;
+      emailEl.textContent = c.email;
+      document.getElementById('contact-atelier').innerHTML = esc(c.atelier).replace(/\n/g, '<br>');
+      document.getElementById('contact-besuche').innerHTML = esc(c.besuche).replace(/\n/g, '<br>');
+      document.getElementById('contact-antwort').innerHTML = esc(c.antwort).replace(/\n/g, '<br>');
+    } catch (e) {
+      console.error('Site-Daten konnten nicht geladen werden:', e);
+    }
+  }
+
   loadGallery();
+  loadSite();
 </script>
 
 </body>
