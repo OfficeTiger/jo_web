@@ -55,7 +55,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding: 1.8rem 3rem;
-  background: linear-gradient(to bottom, rgba(10,8,6,0.95) 0%, transparent 100%);
+  background: linear-gradient(to bottom, rgba(10,8,6,0.95) 0%, rgba(10,8,6,0.8) 65%, transparent 100%);
 }
 .nav-logo {
   font-family: var(--ff-display);
@@ -72,8 +72,9 @@ nav {
   font-size: 0.65rem;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  color: var(--grey);
+  color: rgba(240,236,228,0.85);
   text-decoration: none;
+  text-shadow: 0 1px 4px rgba(0,0,0,0.7);
   transition: color 0.2s;
 }
 .nav-links a:hover { color: var(--white); }
@@ -88,15 +89,16 @@ nav {
 .lang-switch button {
   background: none;
   border: none;
-  color: var(--grey);
+  color: rgba(240,236,228,0.85);
   cursor: pointer;
   font: inherit;
   letter-spacing: inherit;
   padding: 0.2rem 0.15rem;
+  text-shadow: 0 1px 4px rgba(0,0,0,0.7);
   transition: color 0.2s;
 }
 .lang-switch button:hover { color: var(--white); }
-.lang-switch button.active { color: var(--red); }
+.lang-switch button.active { color: var(--red-bright); }
 .lang-switch .lang-sep { color: var(--border); }
 
 /* ── HERO ── */
