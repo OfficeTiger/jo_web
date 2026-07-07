@@ -11,34 +11,46 @@ collections:
   - name: "site"
     label: "Texte & Kontakt"
     files:
-      - label: "Über mich & Kontakt"
+      - label: "Über mich & Kontakt (mehrsprachig)"
         name: "site"
         file: "data/site.json"
         format: json
         fields:
-          - label: "Über mich"
-            name: "about"
+          - label: "Deutsch"
+            name: "de"
             widget: "object"
-            fields:
-              - {label: "Zitat — Zeile 1", name: "quote_line1", widget: "string", hint: "z. B. FARBE IST"}
-              - {label: "Zitat — Hervorhebung (rot)", name: "quote_highlight", widget: "string", hint: "z. B. MATERIE."}
-              - {label: "Zitat — Zeile 3", name: "quote_line3", widget: "string", hint: "z. B. NICHT DEKORATION."}
-              - {label: "Text 1", name: "text1", widget: "text"}
-              - {label: "Text 2", name: "text2", widget: "text"}
-              - {label: "Statistik 1 — Zahl", name: "stat1_number", widget: "string", hint: "z. B. 12+"}
-              - {label: "Statistik 1 — Bezeichnung", name: "stat1_label", widget: "string", hint: "z. B. Jahre Erfahrung"}
-              - {label: "Statistik 2 — Zahl", name: "stat2_number", widget: "string"}
-              - {label: "Statistik 2 — Bezeichnung", name: "stat2_label", widget: "string"}
-              - {label: "Statistik 3 — Zahl", name: "stat3_number", widget: "string"}
-              - {label: "Statistik 3 — Bezeichnung", name: "stat3_label", widget: "string"}
-          - label: "Kontakt"
-            name: "contact"
+            fields: &site_locale_fields
+              - label: "Über mich"
+                name: "about"
+                widget: "object"
+                fields:
+                  - {label: "Zitat — Zeile 1", name: "quote_line1", widget: "string", hint: "z. B. FARBE IST"}
+                  - {label: "Zitat — Hervorhebung (rot)", name: "quote_highlight", widget: "string", hint: "z. B. MATERIE."}
+                  - {label: "Zitat — Zeile 3", name: "quote_line3", widget: "string", hint: "z. B. NICHT DEKORATION."}
+                  - {label: "Text 1", name: "text1", widget: "text"}
+                  - {label: "Text 2", name: "text2", widget: "text"}
+                  - {label: "Statistik 1 — Zahl", name: "stat1_number", widget: "string", hint: "z. B. 12+"}
+                  - {label: "Statistik 1 — Bezeichnung", name: "stat1_label", widget: "string", hint: "z. B. Jahre Erfahrung"}
+                  - {label: "Statistik 2 — Zahl", name: "stat2_number", widget: "string"}
+                  - {label: "Statistik 2 — Bezeichnung", name: "stat2_label", widget: "string"}
+                  - {label: "Statistik 3 — Zahl", name: "stat3_number", widget: "string"}
+                  - {label: "Statistik 3 — Bezeichnung", name: "stat3_label", widget: "string"}
+              - label: "Kontakt"
+                name: "contact"
+                widget: "object"
+                fields:
+                  - {label: "E-Mail-Adresse", name: "email", widget: "string", hint: "z. B. kontakt@josephroysky.de"}
+                  - {label: "Atelier", name: "atelier", widget: "text", hint: "Zwei Zeilen — mit Enter trennen"}
+                  - {label: "Besuche", name: "besuche", widget: "text", hint: "Zwei Zeilen — mit Enter trennen"}
+                  - {label: "Antwortzeit", name: "antwort", widget: "text", hint: "Zwei Zeilen — mit Enter trennen"}
+          - label: "English"
+            name: "en"
             widget: "object"
-            fields:
-              - {label: "E-Mail-Adresse", name: "email", widget: "string", hint: "z. B. kontakt@josephroysky.de"}
-              - {label: "Atelier", name: "atelier", widget: "text", hint: "Zwei Zeilen — mit Enter trennen"}
-              - {label: "Besuche", name: "besuche", widget: "text", hint: "Zwei Zeilen — mit Enter trennen"}
-              - {label: "Antwortzeit", name: "antwort", widget: "text", hint: "Zwei Zeilen — mit Enter trennen"}
+            fields: *site_locale_fields
+          - label: "Español"
+            name: "es"
+            widget: "object"
+            fields: *site_locale_fields
 
   - name: "galerie"
     label: "Galerie — Werke"
@@ -56,21 +68,148 @@ collections:
               - label: "Titel"
                 name: "title"
                 widget: "string"
-                hint: "Titel des Werks, z. B. EXPLOSION"
-              - label: "Beschreibung"
+                hint: "Titel des Werks, z. B. EXPLOSION — gilt für alle Sprachen"
+              - label: "Beschreibung (mehrsprachig)"
                 name: "meta"
-                widget: "string"
-                hint: "Technik, Maße, Jahr — z. B. Acryl, Relief · 120 × 150 cm · 2024"
+                widget: "object"
+                hint: "Technik, Maße, Jahr"
+                fields:
+                  - {label: "Deutsch", name: "de", widget: "string", hint: "z. B. Acryl, Relief · 120 × 150 cm · 2024"}
+                  - {label: "English", name: "en", widget: "string"}
+                  - {label: "Español", name: "es", widget: "string"}
               - label: "Preis"
                 name: "price"
                 widget: "string"
-                hint: "z. B. 2.800 € oder «Auf Anfrage» oder «—» (nicht zum Verkauf)"
+                hint: "z. B. 2.800 € oder «Auf Anfrage» oder «—» (nicht zum Verkauf) — gilt für alle Sprachen"
               - label: "Bild"
                 name: "image"
                 widget: "image"
-                hint: "Bild hochladen oder aus vorhandenen auswählen"
-              - label: "Etikett"
+                hint: "Bild hochladen oder aus vorhandenen auswählen — gilt für alle Sprachen"
+              - label: "Etikett (mehrsprachig)"
                 name: "badge"
-                widget: "string"
-                required: false
+                widget: "object"
                 hint: "Optional: z. B. NEU oder VERKAUFT — leer lassen wenn nicht benötigt"
+                required: false
+                fields:
+                  - {label: "Deutsch", name: "de", widget: "string", required: false}
+                  - {label: "English", name: "en", widget: "string", required: false}
+                  - {label: "Español", name: "es", widget: "string", required: false}
+
+  - name: "i18n"
+    label: "Übersetzungen (Menü, Texte, Formular)"
+    files:
+      - label: "Alle Oberflächentexte"
+        name: "i18n"
+        file: "data/i18n.json"
+        format: json
+        fields:
+          - label: "Deutsch"
+            name: "de"
+            widget: "object"
+            fields: &i18n_locale_fields
+              - label: "Navigation"
+                name: "nav"
+                widget: "object"
+                fields:
+                  - {label: "Galerie", name: "gallery", widget: "string"}
+                  - {label: "Über mich", name: "about", widget: "string"}
+                  - {label: "Atelier", name: "atelier", widget: "string"}
+                  - {label: "Kontakt", name: "contact", widget: "string"}
+              - label: "Hero"
+                name: "hero"
+                widget: "object"
+                fields:
+                  - {label: "Eyebrow (kleiner Text über dem Titel)", name: "eyebrow", widget: "string"}
+                  - {label: "Untertitel", name: "sub", widget: "text"}
+                  - {label: "Button-Text", name: "cta", widget: "string"}
+              - label: "Laufschrift (Marquee-Wörter)"
+                name: "marquee"
+                widget: "list"
+                field: {label: "Wort", name: "word", widget: "string"}
+              - label: "Galerie-Sektion"
+                name: "gallery"
+                widget: "object"
+                fields:
+                  - {label: "Label", name: "label", widget: "string"}
+                  - {label: "Titel", name: "title", widget: "string"}
+                  - {label: "Anzahl-Text", name: "countTemplate", widget: "string", hint: "{n} wird automatisch durch die Anzahl der Werke ersetzt"}
+              - label: "Über-mich-Sektion"
+                name: "about"
+                widget: "object"
+                fields:
+                  - {label: "Label", name: "label", widget: "string"}
+              - label: "Prozess-Sektion"
+                name: "process"
+                widget: "object"
+                fields:
+                  - {label: "Label", name: "label", widget: "string"}
+                  - {label: "Titel", name: "title", widget: "string"}
+                  - label: "Schritte"
+                    name: "items"
+                    widget: "list"
+                    summary: "{{fields.title}}"
+                    fields:
+                      - {label: "Titel", name: "title", widget: "string"}
+                      - {label: "Text", name: "text", widget: "text"}
+              - label: "Testimonial"
+                name: "testimonial"
+                widget: "object"
+                fields:
+                  - {label: "Zitat", name: "quote", widget: "text"}
+                  - {label: "Autor", name: "author", widget: "string"}
+              - label: "Kontakt-Sektion"
+                name: "contact"
+                widget: "object"
+                fields:
+                  - {label: "Label", name: "label", widget: "string"}
+                  - {label: "Titel", name: "title", widget: "text", hint: "Zeilenumbruch mit Enter"}
+                  - label: "Info-Labels"
+                    name: "infoLabels"
+                    widget: "object"
+                    fields:
+                      - {label: "Atelier", name: "atelier", widget: "string"}
+                      - {label: "Besuche", name: "besuche", widget: "string"}
+                      - {label: "Antwort", name: "antwort", widget: "string"}
+              - label: "Formular"
+                name: "form"
+                widget: "object"
+                fields:
+                  - label: "Feld-Bezeichnungen"
+                    name: "labels"
+                    widget: "object"
+                    fields:
+                      - {label: "Name", name: "name", widget: "string"}
+                      - {label: "E-Mail", name: "email", widget: "string"}
+                      - {label: "Interesse", name: "interest", widget: "string"}
+                      - {label: "Nachricht", name: "message", widget: "string"}
+                  - label: "Platzhalter"
+                    name: "placeholders"
+                    widget: "object"
+                    fields:
+                      - {label: "Name", name: "name", widget: "string"}
+                      - {label: "E-Mail", name: "email", widget: "string"}
+                      - {label: "Interesse", name: "interest", widget: "string"}
+                      - {label: "Nachricht", name: "message", widget: "string"}
+                  - {label: "Senden-Button", name: "send", widget: "string"}
+                  - {label: "Text während des Sendens", name: "sending", widget: "string"}
+                  - {label: "Erfolgsmeldung", name: "success", widget: "string"}
+              - label: "Footer"
+                name: "footer"
+                widget: "object"
+                fields:
+                  - {label: "Copyright-Zeile", name: "copyright", widget: "string"}
+                  - label: "Links"
+                    name: "links"
+                    widget: "object"
+                    fields:
+                      - {label: "Instagram", name: "instagram", widget: "string"}
+                      - {label: "Impressum", name: "impressum", widget: "string"}
+                      - {label: "Datenschutz", name: "datenschutz", widget: "string"}
+          - label: "English"
+            name: "en"
+            widget: "object"
+            fields: *i18n_locale_fields
+          - label: "Español"
+            name: "es"
+            widget: "object"
+            fields: *i18n_locale_fields

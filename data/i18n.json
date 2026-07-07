@@ -1,0 +1,122 @@
+{
+  "de": {
+    "nav": { "gallery": "Galerie", "about": "Über mich", "atelier": "Atelier", "contact": "Kontakt" },
+    "hero": {
+      "eyebrow": "Zeitgenössische Malerei · Unikate",
+      "sub": "Materie, die brennt. Farbe, die bleibt. Jedes Werk entsteht aus Impuls und Überzeugung — kein Bild gleicht dem anderen.",
+      "cta": "Werke entdecken →"
+    },
+    "marquee": ["ORIGINALE", "UNIKATE", "RELIEF & TEXTUR", "ACRYL & ÖL", "HANDGEFERTIGT", "JOSEPH ROYSKY"],
+    "gallery": { "label": "Aktuelle Werke", "title": "GALERIE", "countTemplate": "{n} Werke · Alle Unikate" },
+    "about": { "label": "Über den Künstler" },
+    "process": {
+      "label": "Kauf & Anfrage",
+      "title": "SO FUNKTIONIERT ES",
+      "items": [
+        { "title": "ENTDECKEN", "text": "Stöbern Sie durch die Galerie. Jedes Werk ist ein Unikat — wenn es Sie bewegt, ist es das Richtige. Bilder auf Anfrage auch als Hochauflösung verfügbar." },
+        { "title": "ANFRAGEN", "text": "Schreiben Sie mir — ich antworte persönlich. Auf Wunsch sende ich weitere Details, Fotos im Licht oder wir vereinbaren einen Besuch zur direkten Ansicht." },
+        { "title": "LIEFERUNG", "text": "Jedes Werk wird fachgerecht verpackt und versichert geliefert — oder persönlich übergeben. Mit Echtheitszertifikat und vollständiger Dokumentation." }
+      ]
+    },
+    "testimonial": {
+      "quote": "„Das Bild verändert den Raum. Es zieht Energie an — und jeder Besucher fragt sofort: Wer hat das gemalt?“",
+      "author": "— Privatsammler, München · 2024"
+    },
+    "contact": {
+      "label": "Kontakt & Anfragen",
+      "title": "SCHREIBEN\nSIE MIR.",
+      "infoLabels": { "atelier": "Atelier", "besuche": "Besuche", "antwort": "Antwort" }
+    },
+    "form": {
+      "labels": { "name": "Name", "email": "E-Mail", "interest": "Werk / Interesse", "message": "Nachricht" },
+      "placeholders": { "name": "Ihr Name", "email": "ihre@email.de", "interest": "z. B. »Säule« oder allgemeine Anfrage", "message": "Ihre Nachricht …" },
+      "send": "Nachricht senden →",
+      "sending": "Wird gesendet …",
+      "success": "Vielen Dank — ich melde mich bald persönlich."
+    },
+    "footer": {
+      "copyright": "© 2024 Joseph Roysky. Alle Rechte vorbehalten.",
+      "links": { "instagram": "Instagram", "impressum": "Impressum", "datenschutz": "Datenschutz" }
+    }
+  },
+  "en": {
+    "nav": { "gallery": "Gallery", "about": "About", "atelier": "Studio", "contact": "Contact" },
+    "hero": {
+      "eyebrow": "Contemporary Painting · Originals",
+      "sub": "Matter that burns. Color that stays. Every work emerges from impulse and conviction — no two paintings alike.",
+      "cta": "Discover the works →"
+    },
+    "marquee": ["ORIGINALS", "UNIQUE PIECES", "RELIEF & TEXTURE", "ACRYLIC & OIL", "HANDMADE", "JOSEPH ROYSKY"],
+    "gallery": { "label": "Current Works", "title": "GALLERY", "countTemplate": "{n} works · All originals" },
+    "about": { "label": "About the Artist" },
+    "process": {
+      "label": "Purchase & Inquiry",
+      "title": "HOW IT WORKS",
+      "items": [
+        { "title": "DISCOVER", "text": "Browse the gallery. Every work is one of a kind — if it moves you, it's the right one. High-resolution images available on request." },
+        { "title": "INQUIRE", "text": "Write to me — I reply personally. On request I'll send further details, photos in natural light, or we can arrange a visit to view the work in person." },
+        { "title": "DELIVERY", "text": "Every work is professionally packed and delivered insured — or handed over in person. Includes a certificate of authenticity and full documentation." }
+      ]
+    },
+    "testimonial": {
+      "quote": "\"The painting changes the room. It draws energy — and every visitor immediately asks: who painted this?\"",
+      "author": "— Private collector, Munich · 2024"
+    },
+    "contact": {
+      "label": "Contact & Inquiries",
+      "title": "WRITE\nTO ME.",
+      "infoLabels": { "atelier": "Studio", "besuche": "Visits", "antwort": "Response" }
+    },
+    "form": {
+      "labels": { "name": "Name", "email": "Email", "interest": "Work / Interest", "message": "Message" },
+      "placeholders": { "name": "Your name", "email": "your@email.com", "interest": "e.g. »Column« or general inquiry", "message": "Your message …" },
+      "send": "Send message →",
+      "sending": "Sending …",
+      "success": "Thank you — I'll get back to you personally soon."
+    },
+    "footer": {
+      "copyright": "© 2024 Joseph Roysky. All rights reserved.",
+      "links": { "instagram": "Instagram", "impressum": "Legal Notice", "datenschutz": "Privacy Policy" }
+    }
+  },
+  "es": {
+    "nav": { "gallery": "Galería", "about": "Sobre mí", "atelier": "Estudio", "contact": "Contacto" },
+    "hero": {
+      "eyebrow": "Pintura Contemporánea · Piezas Únicas",
+      "sub": "Materia que arde. Color que permanece. Cada obra nace del impulso y la convicción — ninguna pintura es igual a otra.",
+      "cta": "Descubrir las obras →"
+    },
+    "marquee": ["ORIGINALES", "PIEZAS ÚNICAS", "RELIEVE Y TEXTURA", "ACRÍLICO Y ÓLEO", "HECHO A MANO", "JOSEPH ROYSKY"],
+    "gallery": { "label": "Obras Actuales", "title": "GALERÍA", "countTemplate": "{n} obras · Todas piezas únicas" },
+    "about": { "label": "Sobre el Artista" },
+    "process": {
+      "label": "Compra y Consulta",
+      "title": "CÓMO FUNCIONA",
+      "items": [
+        { "title": "DESCUBRIR", "text": "Explore la galería. Cada obra es única — si le conmueve, es la indicada. Imágenes en alta resolución disponibles bajo petición." },
+        { "title": "CONSULTAR", "text": "Escríbame — respondo personalmente. Si lo desea, envío más detalles, fotos con luz natural, o concertamos una visita para verla en persona." },
+        { "title": "ENTREGA", "text": "Cada obra se embala profesionalmente y se entrega asegurada — o se entrega en persona. Incluye certificado de autenticidad y documentación completa." }
+      ]
+    },
+    "testimonial": {
+      "quote": "«El cuadro transforma el espacio. Atrae energía — y cada visitante pregunta de inmediato: ¿quién pintó esto?»",
+      "author": "— Coleccionista privado, Múnich · 2024"
+    },
+    "contact": {
+      "label": "Contacto y Consultas",
+      "title": "ESCRÍBAME\nAHORA.",
+      "infoLabels": { "atelier": "Estudio", "besuche": "Visitas", "antwort": "Respuesta" }
+    },
+    "form": {
+      "labels": { "name": "Nombre", "email": "Correo electrónico", "interest": "Obra / Interés", "message": "Mensaje" },
+      "placeholders": { "name": "Su nombre", "email": "su@email.com", "interest": "p. ej. «Columna» o consulta general", "message": "Su mensaje …" },
+      "send": "Enviar mensaje →",
+      "sending": "Enviando …",
+      "success": "Muchas gracias — me pondré en contacto personalmente pronto."
+    },
+    "footer": {
+      "copyright": "© 2024 Joseph Roysky. Todos los derechos reservados.",
+      "links": { "instagram": "Instagram", "impressum": "Aviso Legal", "datenschutz": "Política de Privacidad" }
+    }
+  }
+}

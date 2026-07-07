@@ -1,21 +1,65 @@
 {
-  "about": {
-    "quote_line1": "FARBE IST",
-    "quote_highlight": "MATERIE.",
-    "quote_line3": "NICHT DEKORATION.",
-    "text1": "Ich male mit dem Spachtel, mit den Händen, mit dem Körper. Meine Werke entstehen in Schichten — jede Oberfläche trägt die Geschichte ihrer Entstehung sichtbar in sich: aufgetragen, abgekratzt, überarbeitet, verdichtet.",
-    "text2": "Die wiederkehrenden Kontraste in meiner Arbeit — Schwarz gegen Weiß, Rot gegen Schwarz, Gold gegen Dunkel — sind keine ästhetische Entscheidung. Sie sind Ausdruck: von Spannung, von Energie, von dem, was zwischen zwei Zuständen liegt.",
-    "stat1_number": "12+",
-    "stat1_label": "Jahre Erfahrung",
-    "stat2_number": "200+",
-    "stat2_label": "Verkaufte Werke",
-    "stat3_number": "8",
-    "stat3_label": "Ausstellungen"
+  "de": {
+    "about": {
+      "quote_line1": "FARBE IST",
+      "quote_highlight": "MATERIE.",
+      "quote_line3": "NICHT DEKORATION.",
+      "text1": "Ich male mit dem Spachtel, mit den Händen, mit dem Körper. Meine Werke entstehen in Schichten — jede Oberfläche trägt die Geschichte ihrer Entstehung sichtbar in sich: aufgetragen, abgekratzt, überarbeitet, verdichtet.",
+      "text2": "Die wiederkehrenden Kontraste in meiner Arbeit — Schwarz gegen Weiß, Rot gegen Schwarz, Gold gegen Dunkel — sind keine ästhetische Entscheidung. Sie sind Ausdruck: von Spannung, von Energie, von dem, was zwischen zwei Zuständen liegt.",
+      "stat1_number": "12+",
+      "stat1_label": "Jahre Erfahrung",
+      "stat2_number": "200+",
+      "stat2_label": "Verkaufte Werke",
+      "stat3_number": "8",
+      "stat3_label": "Ausstellungen"
+    },
+    "contact": {
+      "email": "kontakt@josephroysky.de",
+      "atelier": "Auf Anfrage\nMünchen",
+      "besuche": "Nach Vereinbarung\nDi – Sa",
+      "antwort": "In der Regel\ninnerhalb 24 h"
+    }
   },
-  "contact": {
-    "email": "kontakt@josephroysky.de",
-    "atelier": "Auf Anfrage\nMünchen",
-    "besuche": "Nach Vereinbarung\nDi – Sa",
-    "antwort": "In der Regel\ninnerhalb 24 h"
+  "en": {
+    "about": {
+      "quote_line1": "COLOR IS",
+      "quote_highlight": "MATTER.",
+      "quote_line3": "NOT DECORATION.",
+      "text1": "I paint with the palette knife, with my hands, with my body. My works emerge in layers — every surface visibly carries the story of its making: applied, scraped away, reworked, condensed.",
+      "text2": "The recurring contrasts in my work — black against white, red against black, gold against dark — are not an aesthetic choice. They are expression: of tension, of energy, of what lies between two states.",
+      "stat1_number": "12+",
+      "stat1_label": "Years of Experience",
+      "stat2_number": "200+",
+      "stat2_label": "Works Sold",
+      "stat3_number": "8",
+      "stat3_label": "Exhibitions"
+    },
+    "contact": {
+      "email": "kontakt@josephroysky.de",
+      "atelier": "By appointment\nMunich",
+      "besuche": "By arrangement\nTue – Sat",
+      "antwort": "Usually\nwithin 24 h"
+    }
+  },
+  "es": {
+    "about": {
+      "quote_line1": "EL COLOR ES",
+      "quote_highlight": "MATERIA.",
+      "quote_line3": "NO DECORACIÓN.",
+      "text1": "Pinto con la espátula, con las manos, con el cuerpo. Mis obras surgen en capas — cada superficie lleva visible la historia de su creación: aplicada, raspada, reelaborada, condensada.",
+      "text2": "Los contrastes recurrentes en mi trabajo — negro contra blanco, rojo contra negro, oro contra oscuridad — no son una decisión estética. Son expresión: de tensión, de energía, de lo que se encuentra entre dos estados.",
+      "stat1_number": "12+",
+      "stat1_label": "Años de Experiencia",
+      "stat2_number": "200+",
+      "stat2_label": "Obras Vendidas",
+      "stat3_number": "8",
+      "stat3_label": "Exposiciones"
+    },
+    "contact": {
+      "email": "kontakt@josephroysky.de",
+      "atelier": "Bajo petición\nMúnich",
+      "besuche": "Con cita previa\nMar – Sáb",
+      "antwort": "Normalmente\nen 24 h"
+    }
   }
 }

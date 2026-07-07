@@ -3,72 +3,112 @@
     {
       "image": "/images/img_01.jpeg",
       "title": "EXPLOSION",
-      "meta": "Acryl, Relief · ca. 120 × 150 cm · 2024",
+      "meta": {
+        "de": "Acryl, Relief · ca. 120 × 150 cm · 2024",
+        "en": "Acrylic, relief · approx. 120 × 150 cm · 2024",
+        "es": "Acrílico, relieve · aprox. 120 × 150 cm · 2024"
+      },
       "price": "Auf Anfrage",
-      "badge": ""
+      "badge": { "de": "", "en": "", "es": "" }
     },
     {
       "image": "/images/img_02.jpeg",
       "title": "STRUKTUR I",
-      "meta": "Detailaufnahme · Acryl, Spachtelmasse",
+      "meta": {
+        "de": "Detailaufnahme · Acryl, Spachtelmasse",
+        "en": "Detail shot · Acrylic, palette knife texture",
+        "es": "Foto de detalle · Acrílico, pasta de espátula"
+      },
       "price": "—",
-      "badge": ""
+      "badge": { "de": "", "en": "", "es": "" }
     },
     {
       "image": "/images/img_03.jpeg",
       "title": "KONTRAST — DETAIL",
-      "meta": "Acryl auf Leinwand",
+      "meta": {
+        "de": "Acryl auf Leinwand",
+        "en": "Acrylic on canvas",
+        "es": "Acrílico sobre lienzo"
+      },
       "price": "—",
-      "badge": ""
+      "badge": { "de": "", "en": "", "es": "" }
     },
     {
       "image": "/images/img_04.jpeg",
       "title": "KONTRAST",
-      "meta": "Acryl auf Leinwand · ca. 160 × 120 cm · 2023",
+      "meta": {
+        "de": "Acryl auf Leinwand · ca. 160 × 120 cm · 2023",
+        "en": "Acrylic on canvas · approx. 160 × 120 cm · 2023",
+        "es": "Acrílico sobre lienzo · aprox. 160 × 120 cm · 2023"
+      },
       "price": "2.800 €",
-      "badge": ""
+      "badge": { "de": "", "en": "", "es": "" }
     },
     {
       "image": "/images/img_05.jpeg",
       "title": "GLUT — DETAIL",
-      "meta": "Acryl, Relief",
+      "meta": {
+        "de": "Acryl, Relief",
+        "en": "Acrylic, relief",
+        "es": "Acrílico, relieve"
+      },
       "price": "—",
-      "badge": ""
+      "badge": { "de": "", "en": "", "es": "" }
     },
     {
       "image": "/images/img_06.jpeg",
       "title": "VULKAN",
-      "meta": "Acryl, Relief · ca. 80 × 200 cm · 2024",
+      "meta": {
+        "de": "Acryl, Relief · ca. 80 × 200 cm · 2024",
+        "en": "Acrylic, relief · approx. 80 × 200 cm · 2024",
+        "es": "Acrílico, relieve · aprox. 80 × 200 cm · 2024"
+      },
       "price": "3.200 €",
-      "badge": ""
+      "badge": { "de": "", "en": "", "es": "" }
     },
     {
       "image": "/images/img_07.jpeg",
       "title": "MAGMA — DETAIL",
-      "meta": "Acryl, Relief",
+      "meta": {
+        "de": "Acryl, Relief",
+        "en": "Acrylic, relief",
+        "es": "Acrílico, relieve"
+      },
       "price": "—",
-      "badge": ""
+      "badge": { "de": "", "en": "", "es": "" }
     },
     {
       "image": "/images/img_08.jpeg",
       "title": "SÄULE",
-      "meta": "Acryl, Relief · ca. 120 × 160 cm · 2024",
+      "meta": {
+        "de": "Acryl, Relief · ca. 120 × 160 cm · 2024",
+        "en": "Acrylic, relief · approx. 120 × 160 cm · 2024",
+        "es": "Acrílico, relieve · aprox. 120 × 160 cm · 2024"
+      },
       "price": "3.600 €",
-      "badge": ""
+      "badge": { "de": "", "en": "", "es": "" }
     },
     {
       "image": "/images/img_09.jpeg",
       "title": "GOLD — TRIPTYCHON",
-      "meta": "Acryl, Blattgold, Relief · 3-teilig · 2023",
+      "meta": {
+        "de": "Acryl, Blattgold, Relief · 3-teilig · 2023",
+        "en": "Acrylic, gold leaf, relief · triptych · 2023",
+        "es": "Acrílico, pan de oro, relieve · tríptico · 2023"
+      },
       "price": "4.500 €",
-      "badge": ""
+      "badge": { "de": "", "en": "", "es": "" }
     },
     {
       "image": "/images/img_10.jpeg",
       "title": "NACHT & GOLD",
-      "meta": "Zwei Werke · Acryl, Relief · 2023",
+      "meta": {
+        "de": "Zwei Werke · Acryl, Relief · 2023",
+        "en": "Two works · Acrylic, relief · 2023",
+        "es": "Dos obras · Acrílico, relieve · 2023"
+      },
       "price": "Auf Anfrage",
-      "badge": ""
+      "badge": { "de": "", "en": "", "es": "" }
     }
   ]
 }
